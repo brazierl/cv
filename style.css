@@ -1,3 +1,53 @@
-html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.main-content {
+  font-size: 14px;
+  width: 1024px;
+  margin: auto;
+}
+
+div {
+  border: thin solid salmon;
+}
+
+.section {
+  width: 100%;
+}
+
+img.icon {
+  height: 30px;
+  width: 30px;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#me {
+    width: 140px;
+}
+
+/* a[rel="noopener noreferrer"] ::after {
+  content: url(icons/external-link.svg);
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+} */
+
+.centered {
+    text-align: center;
+}
+
+.section .profile {
+    display: flex;
+}
+
+/* @media screen and (min-width: 800px) {
+    .main-content {
+      margin: 1em 2em;
+    }
+  }  */

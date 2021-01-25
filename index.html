@@ -6,79 +6,85 @@
     </head>
     <body>
         <!--Contenu-->
-        <div>
-            <!--Infos-->
+        <div class="main-content">
             <div>
+            <!--Infos-->
+            <div class="section contact">
                 <!--Titre-->
                 <h1>
                     Louis Brazier
                 </h1>
                 <!--contenu-->
-                <div>
+                <div class="profile">
                     <div>
                         <table>
                             <tbody>
                                 <tr>
-                                    <th>Adresse</th>
                                     <td>
-                                        <div>
-                                            325 rue de la Gorge,
-                                        </div>
-                                        <div>
-                                            74890 Lully, France
-                                        </div>
+                                        <img src="icons/home.svg" class="icon"/>
+                                    </td>
+                                    <td>
+                                        <a rel="noopener noreferrer" href="geo:46.28492369842749,6.417538680424769">
+                                            <div>
+                                                325 rue de la Gorge,
+                                            </div>
+                                            <div>
+                                                74890 Lully, France
+                                            </div>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Téléphone</th>
                                     <td>
-                                        +33 6 32 73 41 83
+                                        <a href="tel:+33 6 32 73 41 83"><img src="icons/phone.svg" class="icon"/></a>
+                                    </td>
+                                    <td>
+                                        <a href="tel:+33 6 32 73 41 83">+33 6 32 73 41 83</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Email</th>
+                                    <td>
+                                        <img src="icons/mail.svg" class="icon"/>
+                                    </td>
                                     <td>
                                     brazier.louis@gmail.com
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                    04/11/1995 - 25 ans
+                                    <td colspan="2" class="centered">
+                                        04/11/1995 (25 ans)
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                    Permis B - Véhiculé
+                                    <td colspan="2" class="centered">
+                                        Permis B (Véhiculé)
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Réseaux</th>
-                                    <td>
+                                    <td colspan="2" class="centered">
                                         <!--LinkedIn-->
-                                        <a target="_blank" rel="noopener noreferrer" title="Louis Brazier" href="https://www.linkedin.com/in/louis-brazier/"><img src="icons/linkedin.png"/></a>
+                                        <a target="_blank" rel="noopener noreferrer" title="Louis Brazier" href="https://www.linkedin.com/in/louis-brazier/">
+                                            <img class="icon" src="icons/linkedin.png"/>
+                                        </a>
                                         <!--Github-->
-                                        <a target="_blank" rel="noopener noreferrer" title="brazierl" href="https://github.com/brazierl"><img src="icons/github.png"/></a>
+                                        <a target="_blank" rel="noopener noreferrer" title="brazierl" href="https://github.com/brazierl">
+                                            <img class="icon" src="icons/github.png"/>
+                                        </a>
                                         <!--Skype-->
-                                        <a target="_blank" rel="noopener noreferrer" title="brazierlouis" href="https://join.skype.com/invite/aU9HGsFsVhlA"><img src="icons/skype.svg"/></a>
+                                        <a target="_blank" rel="noopener noreferrer" title="brazierlouis" href="https://join.skype.com/invite/aU9HGsFsVhlA">
+                                            <img class="icon" src="icons/skype.svg"/>
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
-                        <img src="moi.jpg" />
+                        <img id="me" src="moi.jpg" />
                     </div>
                     <div>
                         <table>
                             <tbody>
-                                <tr>
-                                    <th>
-                                        Nationalité
-                                    </th>
-                                    <td>
-                                        Française
-                                    </td>
-                                </tr>
                                 <tr>
                                     <th>
                                         Nationalité
@@ -116,7 +122,7 @@
                 </div>
             </div>
             <!--Objectifs-->
-            <div>
+            <div class="section objectives">
                 <!--Titre-->
                 <h1>
                     Objectifs
@@ -131,10 +137,10 @@
                 </div>
             </div>
             <!--Caractéristiques perso-->
-            <div>
+            <div class="section character">
                 <!--Titre-->
                 <h1>
-                    Caractéristiques personnelles
+                    Caractère
                 </h1>
                 <!--contenu-->
                 <div>
@@ -149,7 +155,7 @@
                 </div>
             </div>
             <!--Formation-->
-            <div>
+            <div class="section school">
                 <!--Titre-->
                 <h1>
                     Formation
@@ -207,7 +213,7 @@
                 </div>
             </div>
             <!--Compétences techniques-->
-            <div>
+            <div class="section technical">
                 <!--Titre-->
                 <h1>
                     Compétences techniques
@@ -221,22 +227,22 @@
                         <tbody>
                             <tr>
                                 <td>Visual Studio</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
                                 <td>Visual Studio Code</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
                                 <td>Git</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
                                 <td>Microsoft Office</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                         </tbody>
-                    </div>
+                    </table>
                     <table>
                         <thead>
                             <th colspan="2">Technologies</th>
@@ -244,38 +250,38 @@
                         <tbody>
                             <tr>
                                 <td>C#</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
-                                <td>HTML5</td>
-                                <td></td>
+                                <td>HTML</td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
-                                <td>CSS3</td>
-                                <td></td>
+                                <td>CSS</td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
                                 <td>Javascript</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
                                 <td>SQL Server</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
                                 <td>Cosmos DB</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                             <tr>
                                 <td>Azure</td>
-                                <td></td>
+                                <td><span></span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <!--Experience-->
-            <div>
+            <div class="section professional">
                 <!--Titre-->
                 <h1>
                     Expérience Professionelle
@@ -297,7 +303,7 @@
                                         <ul>
                                             <li>C# (.NET Framework)</li>
                                             <li>SQL Server, Cosmos DB</li>
-                                            <li>HTML5, Javascript, CSS3</li>
+                                            <li>HTML, Javascript, CSS</li>
                                             <li>Azure</li>
                                         </ul>
                                     </div>
@@ -354,7 +360,7 @@
                 </div>
             </div>
             <!--Centres d'interets-->
-            <div>
+            <div class="section interests">
                 <!--Titre-->
                 <h1>
                     Centres d'intérets
@@ -372,7 +378,7 @@
                 </div>
             </div>
             <!--Références-->
-            <div>
+            <div class="section references">
                 <!--Titre-->
                 <h1>
                     Références
@@ -397,6 +403,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>
