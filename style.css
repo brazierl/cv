@@ -1,15 +1,13 @@
+/* --Main-- */
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80%;
 }
 
 .main-content {
-  font-size: 14px;
   width: 1024px;
   margin: auto;
-}
-
-div {
-  border: thin solid salmon;
 }
 
 .section {
@@ -17,9 +15,9 @@ div {
 }
 
 img.icon {
-  height: 30px;
   width: 30px;
   display: inline;
+  margin: 0.1em;
 }
 
 a {
@@ -27,23 +25,99 @@ a {
   color: black;
 }
 
-#me {
-    width: 140px;
+table tr td {
+    padding: 0.1em;
 }
-
-/* a[rel="noopener noreferrer"] ::after {
-  content: url(icons/external-link.svg);
-  width: 10px;
-  height: 10px;
-  font-size: 10px;
-} */
 
 .centered {
     text-align: center;
 }
 
-.section .profile {
+h1 {
+    padding: 0.2em;
+    background-color: rgb(60, 160, 240);
+    color: white;
+}
+
+/* --Profile-- */
+
+#me {
+    width: 120px;
+}
+
+.section.contact .profile {
     display: flex;
+    justify-content: center;
+}
+
+.section.contact .profile>div  {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.meter { 
+	height: 10px; 
+	position: relative;
+	background: #aaa;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding: 2px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.8);
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(60, 160, 240);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(60, 160, 240) 37%,
+      rgb(60, 160, 240) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    width: 0px;
+}
+
+.meter > span[percentage="20"] {
+    width: 20%;
+}
+
+.meter > span[percentage="40"] {
+    width: 40%;
+}
+
+.meter > span[percentage="60"] {
+    width: 60%;
+}
+
+.meter > span[percentage="80"] {
+    width: 80%;
+}
+
+.meter > span[percentage="100"] {
+    width: 100%;
+}
+
+ul.inline {
+    display: flex;
+    justify-content: center;
+}
+
+ul.inline li {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0.1em 1em 0.1em 1em;
+    position: relative;
+    list-style-type: "-";
 }
 
 /* @media screen and (min-width: 800px) {
@@ -51,3 +125,10 @@ a {
       margin: 1em 2em;
     }
   }  */
+
+/* a[rel="noopener noreferrer"] ::after {
+  content: url(icons/external-link.svg);
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+} */
