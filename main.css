@@ -55,23 +55,27 @@ ul.inline li {
     text-align: center;
     margin: 0.1em 1em 0.1em 1em;
     position: relative;
-    list-style-type: "-";
+    list-style-type: square;
+}
+
+.section .content {
+    display: flex;
+    justify-content: center;
+}
+
+.section .content>div  {
+    flex-grow: 1;
+    text-align: center;
+}
+
+p {
+  margin: 1em;
 }
 
 /* --Profile-- */
 
 #me {
     width: 120px;
-}
-
-.section.contact .profile {
-    display: flex;
-    justify-content: center;
-}
-
-.section.contact .profile>div  {
-    flex-grow: 1;
-    text-align: center;
 }
 
 /* @media screen and (min-width: 800px) {
