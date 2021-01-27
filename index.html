@@ -12,7 +12,7 @@
         <div class="main-content">
             <div>
                 <!--Infos-->
-                <div class="section contact">
+                <section class="contact">
                     <!--Titre-->
                     <h1>
                         Louis Brazier
@@ -102,19 +102,8 @@
                             </table>
                         </div>
                         <div>
-                            <img id="me" src="moi.jpg" />
-                        </div>
-                        <div>
                             <table>
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <img src="icons/worldwide.svg" class="icon" />
-                                        </td>
-                                        <td>
-                                            <span>France</span><span><img src="icons/france.svg" class="icon" /></span>
-                                        </td>
-                                    </tr>
                                     <tr>
                                         <td>
                                             <img src="icons/english.svg" class="icon" />
@@ -145,10 +134,17 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div>
+                            <img id="me" src="moi.jpg" />
+                        </div>
                     </div>
-                </div>
+                </section>
+                <!-- Title -->
+                <section class="title">
+                    Ingénieur développement web
+                </section>
                 <!--Objectifs-->
-                <div class="section objectives">
+                <section class="objectives">
                     <!--Titre-->
                     <h1>
                         Objectifs
@@ -160,15 +156,15 @@
                             talents pluridisciplinaires.</p>
                         <p>Ouvrir mes perspectives en travaillant avec des méthodes innovantes.</p>
                     </div>
-                </div>
+                </section>
                 <!--Caractéristiques perso-->
-                <div class="section character">
+                <section class="character">
                     <!--Titre-->
                     <h1>
                         Caractère
                     </h1>
                     <!--contenu-->
-                    <div>
+                    <div class="content">
                         <ul class="inline">
                             <li>Polyvalent</li>
                             <li>Curieux</li>
@@ -178,9 +174,9 @@
                             <li>Altruiste</li>
                         </ul>
                     </div>
-                </div>
+                </section>
                 <!--Formation-->
-                <div class="section education">
+                <section class="education">
                     <!--Titre-->
                     <h1>
                         Formation
@@ -238,9 +234,9 @@
                             </table>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!--Compétences techniques-->
-                <div class="section technical">
+                <section class="technical">
                     <!--Titre-->
                     <h1>
                         Compétences techniques
@@ -248,7 +244,7 @@
                     <!--contenu-->
                     <div class="content">
                         <div>
-                            <table>
+                            <table class="assets">
                                 <thead>
                                     <th colspan="2">Logiciels</th>
                                 </thead>
@@ -289,9 +285,9 @@
                             </table>
                         </div>
                         <div>
-                            <table>
+                            <table class="assets">
                                 <thead>
-                                    <th colspan="2">Technologies</th>
+                                    <th colspan="4">Technologies</th>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -299,6 +295,12 @@
                                         <td>
                                             <div class="meter">
                                                 <span percentage="100"></span>
+                                            </div>
+                                        </td>
+                                        <td>SQL Server</td>
+                                        <td>
+                                            <div class="meter">
+                                                <span percentage="80"></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -309,9 +311,21 @@
                                                 <span percentage="100"></span>
                                             </div>
                                         </td>
+                                        <td>Cosmos DB</td>
+                                        <td>
+                                            <div class="meter">
+                                                <span percentage="40"></span>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>CSS</td>
+                                        <td>
+                                            <div class="meter">
+                                                <span percentage="60"></span>
+                                            </div>
+                                        </td>
+                                        <td>Azure</td>
                                         <td>
                                             <div class="meter">
                                                 <span percentage="60"></span>
@@ -326,36 +340,12 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>SQL Server</td>
-                                        <td>
-                                            <div class="meter">
-                                                <span percentage="80"></span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cosmos DB</td>
-                                        <td>
-                                            <div class="meter">
-                                                <span percentage="40"></span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Azure</td>
-                                        <td>
-                                            <div class="meter">
-                                                <span percentage="60"></span>
-                                            </div>
-                                        </td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </section>
                     <!--Experience-->
-                    <div class="section professional">
+                    <section class="professional">
                         <!--Titre-->
                         <h1>
                             Expérience Professionelle
@@ -432,9 +422,9 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </section>
                     <!--Centres d'interets-->
-                    <div class="section interests">
+                    <section class="interests">
                         <!--Titre-->
                         <h1>
                             Centres d'intérets
@@ -452,9 +442,9 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </section>
                     <!--Références-->
-                    <div class="section references">
+                    <section class="references">
                         <!--Titre-->
                         <h1>
                             Références
@@ -481,7 +471,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
     </body>

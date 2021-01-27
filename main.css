@@ -10,7 +10,7 @@ body {
   margin: auto;
 }
 
-.section {
+section {
   width: 100%;
 }
 
@@ -36,7 +36,13 @@ table tr td {
 h1 {
     padding: 0.2em;
     background-color: rgb(60, 160, 240);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
     color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
 }
 
 .info {
@@ -48,6 +54,7 @@ h1 {
 ul.inline {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 ul.inline li {
@@ -58,12 +65,13 @@ ul.inline li {
     list-style-type: square;
 }
 
-.section .content {
+section .content {
     display: flex;
     justify-content: center;
+    padding: 1em;
 }
 
-.section .content>div  {
+section .content>div  {
     flex-grow: 1;
     text-align: center;
 }
@@ -72,10 +80,32 @@ p {
   margin: 1em;
 }
 
-/* --Profile-- */
+table.assets td {
+  padding: 0.2em;
+}
+
+table.assets th {
+  padding-bottom: 0.5em;
+}
+
+section.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(0, 0, 0, 0.75);
+  margin-bottom: 0.5em;
+}
 
 #me {
-    width: 120px;
+    width: 100px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+section.interests .content,
+section.character .content {
+  display: block;
 }
 
 /* @media screen and (min-width: 800px) {
