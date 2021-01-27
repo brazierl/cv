@@ -1,5 +1,5 @@
 .meter { 
-	height: 10px; 
+	height: 0.8em; 
 	position: relative;
 	background: #ddd;
 	-moz-border-radius: 15px;
@@ -49,4 +49,6 @@
 
 .meter > span[percentage="100"] {
     width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

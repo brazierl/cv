@@ -16,7 +16,6 @@ section {
 
 img.icon {
   width: 30px;
-  display: inline;
   margin: 0.1em;
 }
 
@@ -46,7 +45,7 @@ h1 {
 }
 
 .info {
-    color: grey;
+    color: rgb(0, 0, 0, 0.75);
     font-style: italic;
     font-size: 0.8em;
 }
@@ -62,7 +61,7 @@ ul.inline li {
     text-align: center;
     margin: 0.1em 1em 0.1em 1em;
     position: relative;
-    list-style-type: square;
+    list-style-type: "◊";
 }
 
 section .content {
@@ -86,6 +85,7 @@ table.assets td {
 
 table.assets th {
   padding-bottom: 0.5em;
+  color: rgb(0, 0, 0, 0.75);
 }
 
 section.title {
@@ -106,6 +106,62 @@ section.title {
 section.interests .content,
 section.character .content {
   display: block;
+}
+
+table.detailed {
+  width: 100%;
+}
+
+table.detailed th {
+  padding: 0.7em 1em;
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.75);
+}
+
+table.detailed td .detailed__title {
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.75);
+  margin-bottom: 0.2em;
+}
+
+table.detailed td .detailed__sub {
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.75);
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+table.detailed td .detailed__sub .location {
+  font-weight: 500;
+}
+
+table.detailed td span.location::before {
+  content: '';
+  background-image: url('icons/pin.svg');
+  display: inline-block;
+  background-size: 1em;
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+}
+
+table.detailed td .detailed__sub .location {
+  font-weight: 500;
+}
+
+table.detailed td .detailed__content {
+  display: flex;
+  font-size: 0.8em;
+  color: rgb(0, 0, 0, 0.75);
+}
+
+table.detailed td .detailed__content ul {
+  margin: 0px;
+}
+
+table.detailed td .detailed__content ul li {
+  list-style-type: "-";
+  padding-left: 0.5em;
 }
 
 /* @media screen and (min-width: 800px) {
