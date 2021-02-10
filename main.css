@@ -22,6 +22,7 @@ section {
 
 img.icon {
   width: 30px;
+  height: 26px;
   margin: 0.1em;
 }
 
@@ -57,6 +58,8 @@ h1 {
 }
 
 ul.inline {
+    display: -webkit-box; /* wkhtmltopdf */
+    -webkit-box-pack: center; /* wkhtmltopdf */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -72,6 +75,8 @@ ul.inline li {
 }
 
 section .content {
+    display: -webkit-box; /* wkhtmltopdf */
+    -webkit-box-pack: center; /* wkhtmltopdf */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -189,6 +194,7 @@ table.detailed td .detailed__sub .location {
 }
 
 table.detailed td .detailed__content {
+  display: -webkit-box; /* wkhtmltopdf */
   display: flex;
   flex-wrap: wrap;
   font-size: 0.8em;
@@ -224,6 +230,7 @@ section.technical .content .technologies {
 }
 
 section.technical .content .technologies .flex-container {
+  display: -webkit-box; /* wkhtmltopdf */
   display: flex;
   flex-wrap: wrap;
 }
