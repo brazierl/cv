@@ -2,12 +2,18 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 90%;
+  font-size: 0.9em;
 }
 
 .main-content {
   width: 1024px;
   margin: auto;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    width: 100%;
+  }
 }
 
 section {
@@ -35,12 +41,12 @@ table tr td {
 h1 {
     padding: 0.2em;
     background-color: rgb(60, 160, 240);
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     color: white;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
     padding-left: 0.5em;
 }
 
@@ -53,6 +59,7 @@ h1 {
 ul.inline {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0px;
 }
 
@@ -67,7 +74,8 @@ ul.inline li {
 section .content {
     display: flex;
     justify-content: center;
-    padding: 1em;
+    flex-wrap: wrap;
+    padding: 0.5em 0.5em 1em 0.5em;
 }
 
 section .content>div  {
@@ -76,7 +84,7 @@ section .content>div  {
 }
 
 p {
-  margin: 1em;
+  margin: 0.5em 1em;
 }
 
 table.assets td {
@@ -85,7 +93,18 @@ table.assets td {
 
 table.assets th {
   padding-bottom: 0.5em;
-  color: rgb(0, 0, 0, 0.75);
+  text-align: left;
+  font-weight: 500;
+  min-width: 8em;
+}
+
+section.contact table tr {
+  height: 42px;
+}
+
+section.contact table tr td.networks a {
+  height: 100%;
+  float: left;
 }
 
 section.title {
@@ -108,20 +127,38 @@ section.character .content {
   display: block;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 table.detailed {
   width: 100%;
+  border-collapse: collapse;
+}
+
+table.detailed tr {
+  border-bottom: 4px solid white;
 }
 
 table.detailed th {
   padding: 0.7em 1em;
   font-weight: 500;
   color: rgb(0, 0, 0, 0.75);
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.8);
+}
+
+table.detailed td {
+  padding-left: 10px;
 }
 
 table.detailed td .detailed__title {
   font-weight: 600;
   color: rgb(0, 0, 0, 0.75);
-  margin-bottom: 0.2em;
+  margin-bottom: 0.3em;
 }
 
 table.detailed td .detailed__sub {
@@ -129,6 +166,7 @@ table.detailed td .detailed__sub {
   color: rgb(0, 0, 0, 0.75);
   font-style: italic;
   font-size: 0.8em;
+  margin-bottom: 0.3em;
 }
 
 table.detailed td .detailed__sub .location {
@@ -143,6 +181,7 @@ table.detailed td span.location::before {
   width: 1em;
   height: 1em;
   margin-left: 5px;
+  color: rgb(0, 0, 0, 0.75);
 }
 
 table.detailed td .detailed__sub .location {
@@ -151,6 +190,7 @@ table.detailed td .detailed__sub .location {
 
 table.detailed td .detailed__content {
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.8em;
   color: rgb(0, 0, 0, 0.75);
 }
@@ -162,6 +202,36 @@ table.detailed td .detailed__content ul {
 table.detailed td .detailed__content ul li {
   list-style-type: "-";
   padding-left: 0.5em;
+}
+
+section.references .content .name {
+  font-weight: 600;
+}
+
+section.technical .content .title {
+  padding-bottom: 0.5em;
+  color: rgb(0, 0, 0, 0.75);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+section.technical .content .software {
+  flex-grow: 1;
+}
+
+section.technical .content .technologies {
+  flex-grow: 2;
+}
+
+section.technical .content .technologies .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.technical .content .technologies .flex-container>div {
+  flex-grow: 1;
+  text-align: center;
+  max-width: 300px;
 }
 
 /* @media screen and (min-width: 800px) {
