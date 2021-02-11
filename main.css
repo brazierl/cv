@@ -21,9 +21,8 @@ section {
 }
 
 img.icon {
-  width: 30px;
+  width: 40px;
   height: 26px;
-  margin: 0.1em;
 }
 
 a {
@@ -32,64 +31,64 @@ a {
 }
 
 table tr td {
-    padding: 0.1em;
+  padding: 0.1em;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    padding: 0.2em;
-    background-color: rgb(60, 160, 240);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    color: white;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    padding-left: 0.5em;
+  padding: 0.2em;
+  background-color: rgb(60, 160, 240);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: white;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding-left: 0.5em;
 }
 
 .info {
-    color: rgb(0, 0, 0, 0.75);
-    font-style: italic;
-    font-size: 0.8em;
+  color: rgb(0, 0, 0, 0.75);
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 ul.inline {
-    display: -webkit-box; /* wkhtmltopdf */
-    -webkit-box-pack: center; /* wkhtmltopdf */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0px;
+  display: -webkit-box; /* wkhtmltopdf */
+  -webkit-box-pack: center; /* wkhtmltopdf */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px;
 }
 
 ul.inline li {
-    flex-grow: 1;
-    text-align: center;
-    margin: 0.1em 1em 0.1em 1em;
-    position: relative;
-    list-style-type: "◊";
+  flex-grow: 1;
+  text-align: center;
+  margin: 0.1em 1em 0.1em 1em;
+  position: relative;
+  list-style-type: square;
 }
 
 section .content {
-    display: -webkit-box; /* wkhtmltopdf */
-    -webkit-box-pack: center; /* wkhtmltopdf */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0.5em 0.5em 1em 0.5em;
+  display: -webkit-box; /* wkhtmltopdf */
+  -webkit-box-pack: center; /* wkhtmltopdf */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5em 0.5em 1em 0.5em;
 }
 
-section .content>div  {
-    flex-grow: 1;
-    text-align: center;
+section .content > div {
+  flex-grow: 1;
+  text-align: center;
 }
 
 p {
-  margin: 0.5em 1em;
+  margin: 0.6em 1em;
 }
 
 table.assets td {
@@ -121,10 +120,10 @@ section.title {
 }
 
 #me {
-    width: 100px;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
+  width: 100px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
 }
 
 section.interests .content,
@@ -153,7 +152,7 @@ table.detailed th {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.8);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.8);
 }
 
 table.detailed td {
@@ -179,13 +178,16 @@ table.detailed td .detailed__sub .location {
 }
 
 table.detailed td span.location::before {
-  content: '';
-  background-image: url('icons/pin.svg');
+  content: "";
+  background-image: url("icons/pin.svg");
   display: inline-block;
-  background-size: 1em;
+  background-size: 0.9em;
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
   width: 1em;
   height: 1em;
-  margin-left: 5px;
+  margin-left: 0.8em;
+  margin-right: 0.5em;
   color: rgb(0, 0, 0, 0.75);
 }
 
@@ -223,6 +225,11 @@ section.technical .content .title {
 
 section.technical .content .software {
   flex-grow: 1;
+  margin: auto;
+}
+
+section.technical .content .software table.assets {
+  margin: auto;
 }
 
 section.technical .content .technologies {
@@ -233,9 +240,10 @@ section.technical .content .technologies .flex-container {
   display: -webkit-box; /* wkhtmltopdf */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-section.technical .content .technologies .flex-container>div {
+section.technical .content .technologies .flex-container > div {
   flex-grow: 1;
   text-align: center;
   max-width: 300px;
