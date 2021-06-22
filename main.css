@@ -1,0 +1,270 @@
+/* --Main-- */
+@media print {
+  body {
+    zoom:70%; 
+  }
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9em;
+  -webkit-print-color-adjust: exact;
+}
+
+.main-content {
+  width: 1024px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    width: 100%;
+  }
+}
+
+section {
+  width: 100%;
+}
+
+img.icon {
+  width: 26px;
+  min-height: 26px;
+  margin: 0px 7px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+table tr td {
+  padding: 0.1em;
+}
+
+.centered {
+  text-align: center;
+}
+
+h1 {
+  padding: 0.2em;
+  background-color: rgb(60, 160, 240);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: white;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding-left: 0.5em;
+}
+
+.info {
+  color: rgb(0, 0, 0, 0.75);
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+ul.inline {
+  display: -webkit-box; /* wkhtmltopdf */
+  -webkit-box-pack: center; /* wkhtmltopdf */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+ul.inline li {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0.1em 1em 0.1em 1em;
+  position: relative;
+  list-style-type: square;
+}
+
+section .content {
+  display: -webkit-box; /* wkhtmltopdf */
+  -webkit-box-pack: center; /* wkhtmltopdf */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5em 0.5em 1em 0.5em;
+}
+
+section .content > div {
+  flex-grow: 1;
+  text-align: center;
+}
+
+p {
+  margin: 0.6em 1em;
+}
+
+table.assets td {
+  padding: 0.2em;
+}
+
+table.assets th {
+  padding-bottom: 0.5em;
+  text-align: left;
+  font-weight: 500;
+  min-width: 8em;
+}
+
+section.contact table tr {
+  height: 42px;
+}
+
+section.contact table tr td.networks a {
+  height: 100%;
+  float: left;
+}
+
+section.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(0, 0, 0, 0.75);
+  margin-bottom: 0.5em;
+}
+
+#me {
+  width: 100px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+section.interests .content,
+section.character .content {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table.detailed {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.detailed tr {
+  border-bottom: 4px solid white;
+}
+
+table.detailed th {
+  padding: 0.7em 1em;
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.75);
+  background-color: rgb(0, 0, 0, 0.1) !important;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.8);
+}
+
+table.detailed td {
+  padding-left: 10px;
+}
+
+table.detailed td .detailed__title {
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.75);
+  margin-bottom: 0.3em;
+}
+
+table.detailed td .detailed__sub {
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.75);
+  font-style: italic;
+  font-size: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+table.detailed td .detailed__sub .location {
+  font-weight: 500;
+}
+
+table.detailed td span.location::before {
+  content: "";
+  background-image: url("icons/pin.svg");
+  display: inline-block;
+  background-size: 0.9em;
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.8em;
+  margin-right: 0.5em;
+  color: rgb(0, 0, 0, 0.75);
+}
+
+table.detailed td .detailed__sub .location {
+  font-weight: 500;
+}
+
+table.detailed td .detailed__content {
+  display: -webkit-box; /* wkhtmltopdf */
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8em;
+  color: rgb(0, 0, 0, 0.75);
+}
+
+table.detailed td .detailed__content ul {
+  margin: 0px;
+}
+
+table.detailed td .detailed__content ul li {
+  list-style-type: "-";
+  padding-left: 0.5em;
+}
+
+section.references .content .name {
+  font-weight: 600;
+}
+
+section.technical .content .title {
+  padding-bottom: 0.5em;
+  color: rgb(0, 0, 0, 0.75);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+section.technical .content .software {
+  flex-grow: 1;
+  margin: auto;
+}
+
+section.technical .content .software table.assets {
+  margin: auto;
+}
+
+section.technical .content .technologies {
+  flex-grow: 2;
+}
+
+section.technical .content .technologies .flex-container {
+  display: -webkit-box; /* wkhtmltopdf */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.technical .content .technologies .flex-container > div {
+  flex-grow: 1;
+  text-align: center;
+  max-width: 300px;
+}
+
+/* @media screen and (min-width: 800px) {
+    .main-content {
+      margin: 1em 2em;
+    }
+  }  */
+
+/* a[rel="noopener noreferrer"] ::after {
+  content: url(icons/external-link.svg);
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+} */
