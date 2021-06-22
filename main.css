@@ -1,8 +1,14 @@
 /* --Main-- */
+@media print {
+  body {
+    zoom:70%; 
+  }
+}
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.9em;
+  -webkit-print-color-adjust: exact;
 }
 
 .main-content {
@@ -21,8 +27,9 @@ section {
 }
 
 img.icon {
-  width: 40px;
-  height: 26px;
+  width: 26px;
+  min-height: 26px;
+  margin: 0px 7px;
 }
 
 a {
@@ -148,7 +155,7 @@ table.detailed th {
   padding: 0.7em 1em;
   font-weight: 500;
   color: rgb(0, 0, 0, 0.75);
-  background-color: rgb(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0, 0.1) !important;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
