@@ -60,7 +60,7 @@ h1 {
 .info {
   color: rgb(0, 0, 0, 0.75);
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 ul.inline {
@@ -111,6 +111,10 @@ table.assets th {
 
 section.contact table tr {
   height: 42px;
+}
+
+section.contact table tr.small {
+  height: 12px;
 }
 
 section.contact table tr td.networks a {
@@ -255,6 +259,24 @@ section.technical .content .technologies .flex-container > div {
   text-align: center;
   max-width: 300px;
 }
+
+section.technical .content .certifications {
+  flex-grow: 1;
+}
+
+section.technical .content .certifications .flex-container > img {
+  height: 4em;
+}
+
+section.technical .content .certifications > img {
+  margin: 0.2em 0 0 0;
+}
+
+section.technical .content .certifications > a > img {
+  height: 2em;
+  margin: 0.4em 0 0 0;
+}
+
 
 /* @media screen and (min-width: 800px) {
     .main-content {

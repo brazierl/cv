@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="main.css" type="text/css" />
         <link rel="stylesheet" href="meter.css" type="text/css" />
         <title>Louis Brazier - CV</title>
-        <link rel="icon" href="icons/me.jpg" sizes="144x144">
+        <link rel="icon" href="icons/user.svg" sizes="144x144">
     </head>
 
     <body>
@@ -24,7 +24,7 @@
                 <!--contenu-->
                 <div class="content">
                     <div>
-                        <img id="me" src="moi.jpg" />
+                        <img id="me" src="moi.png" />
                     </div>
                     <div>
                         <table>
@@ -36,7 +36,7 @@
                                     <td>
                                         <a rel="noopener noreferrer" href="geo:46.28492369842749,6.417538680424769">
                                             <div>
-                                                13 rue Charles de Gaulle,
+                                                14 rue Elise Gervais,
                                             </div>
                                             <div>
                                                 42000 Saint-Étienne, France
@@ -49,7 +49,7 @@
                                         <img src="icons/user.svg" class="icon" />
                                     </td>
                                     <td>
-                                        04/11/1995 (26 ans)
+                                        04/11/1995 (28 ans)
                                     </td>
                                 </tr>
                                 <tr>
@@ -79,7 +79,7 @@
                                         <img src="icons/mail.svg" class="icon" />
                                     </td>
                                     <td>
-                                        brazier.louis@gmail.com
+                                        <a href="mailto:brazier.louis@gmail.com">brazier.louis@gmail.com</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -122,9 +122,16 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="info" colspan="2">
-                                        TOEFL : 97/120 TOEIC : 905/990
+                                <tr class="small">
+                                    <td></td>
+                                    <td class="info">
+                                        TOEFL : 97/120
+                                    </td>
+                                </tr>
+                                <tr class="small">
+                                    <td></td>
+                                    <td class="info">
+                                        TOEIC : 905/990
                                     </td>
                                 </tr>
                                 <tr>
@@ -144,7 +151,7 @@
             </section>
             <!-- Title -->
             <section class="title">
-                Ingénieur développement web
+                Ingénieur logiciel
             </section>
             <!--Objectifs-->
             <section class="objectives">
@@ -353,7 +360,15 @@
                                             <th>Azure</th>
                                             <td>
                                                 <div class="meter">
-                                                    <span percentage="60"></span>
+                                                    <span percentage="80"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>WPF</th>
+                                            <td>
+                                                <div class="meter">
+                                                    <span percentage="80"></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -361,6 +376,16 @@
                                 </table>
                             </div>
                         </div>
+                    </div>
+                    <div class="certifications">
+                        <div class="title">Certifications</div>
+                            <div class="flex-container">
+                                <img src="icons/az-204.svg"/>
+                                <img src="icons/psd1.png" />
+                        </div>
+                        <a rel="noreferrer noopener" href="https://www.credly.com/users/louis-brazier/badges">
+                            <img src="icons/credly.svg" />
+                        </a>
                     </div>
             </section>
             <!--Experience-->
@@ -373,6 +398,24 @@
                 <div class="content">
                     <table class="detailed">
                         <tbody>
+                            <tr>
+                                <th>6 juin 2022 - aujourd'hui</th>
+                                <td>
+                                    <div class="detailed__title">Avanade</div>
+                                    <div class="detailed__sub">Développeur Full Stack <span class="location">Lyon, France</span>
+                                    </div>
+                                    <div class="detailed__content">
+                                        <ul>
+                                            <li>Développement de fonctionnalités</li>
+                                            <li>Maintenance de l'application</li>
+                                        </ul>
+                                        <ul>
+                                            <li>C# (.NET Framework)</li>
+                                            <li>WPF</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <th>1er févr. 2018 - 10 sept. 2020</th>
                                 <td>
@@ -425,22 +468,6 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <th>30 mars - 19 juin 2015</th>
-                                <td>
-                                    <div class="detailed__title">CGI</div>
-                                    <div class="detailed__sub">Stage <span class="location">Lyon, France</span>
-                                    </div>
-                                    <div class="detailed__content">
-                                        <ul>
-                                            <li>Business Intelligence</li>
-                                        </ul>
-                                        <ul>
-                                            <li>Talend Open Studio for Data Integration</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -456,7 +483,6 @@
                     <ul class="inline">
                         <li>Amis et famille</li>
                         <li>Musique (MAO, guitare)</li>
-                        <li>Skateboard</li>
                         <li>Culture et actualités</li>
                         <li>Sciences</li>
                         <li>Développement durable</li>
@@ -476,19 +502,23 @@
                         <div class="detail">
                             <div class="job">CTO</div>
                             <div class="company">Sociabble</div>
-                            <div class="email">
-                                <a href="mailto:stephane.escandell@sociabble.com">stephane.escandell@sociabble.com</a>
-                            </div>
+                            <!--LinkedIn-->
+                            <a target="_blank" rel="noopener noreferrer" title="Stéphane Escandell"
+                                href="https://www.linkedin.com/in/stephane-escandell/">
+                                <img class="icon" src="icons/linkedin.svg" />
+                            </a>
                         </div>
                     </div>
                     <div>
-                        <div class="name">Charlie Legroux</div>
+                        <div class="name">Alexis Landrieu</div>
                         <div class="detail">
-                            <div class="job">Chef de projet</div>
-                            <div class="company">Orange Applications for Business</div>
-                            <div class="email">
-                                <a href="mailto:charlie.legroux@orange.com">charlie.legroux@orange.com</a>
-                            </div>
+                            <div class="job">Sr. Consultant Software Engineering</div>
+                            <div class="company">Avanade</div>
+                            <!--LinkedIn-->
+                            <a target="_blank" rel="noopener noreferrer" title="Alexis Landrieu"
+                                href="https://www.linkedin.com/in/alexis-landrieu-29822795/">
+                                <img class="icon" src="icons/linkedin.svg" />
+                            </a>
                         </div>
                     </div>
                 </div>
